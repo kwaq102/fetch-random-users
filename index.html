@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - Fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form class="generator">
+
+        <label class="generator__input-name">
+            Wybierz płeć:
+            <select class="generator__select" name="gender">
+                <option value="both" selected>Wszyscy</option>
+                <option value="female">Kobiety</option>
+                <option value="male">Mężczyźni</option>
+            </select>
+        </label>
+
+        <label class="generator__input-name">
+            Liczba osób:
+            <input class="generator__input" name="users-number" type="number" value="10">
+
+        </label>
+
+        <input type="submit" class="button" value="Pobierz użytkowników">
+    </form>
+
+    <div class="users-list"></div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
